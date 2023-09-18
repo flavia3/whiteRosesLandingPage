@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>White Roses Page</title>
+<style>
+    body {
+        margin: 0 auto;
+        padding: 0;
+        display: block;
+        font-family: Arial;
+        color: #fff;
+        background-color: #000;
+    }
+    
+    h1 {
+        text-align: center;
+        margin: 10px;
+        text-shadow: #000;
+        border: 2px solid #fff;
+        padding: 10px 20px; 
+    }
+
+    .container {
+        display: block;
+        margin: 20px;
+        margin-left: 400px;
+        height: 100%;
+        background: linear-gradient(to left, rgb(141, 150, 38), rgb(7, 46, 24));
+        width: 400px;
+        padding: 50px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .myImg {
+
+        width: 75%;
+        height: 20%;
+        display: block;
+        margin: 20px auto;
+        border-radius: 25px;
+    }
+
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #fff;
+    }
+
+    .button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background: rgb(0, 0, 0);
+        color: #fff;
+        border: solid #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+    }
+
+    .button:hover {
+        background: #015741;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>White roses</h1>
+        <h2>Explore the World of White Roses</h2>
+        <hr/>
+        <div>  
+            <p> 
+            White roses have captivated <strong>hearts for centuries</strong> with their timeless beauty and pure, untainted petals.<br/> These flowers <em>symbolize innocence, purity, and new beginnings.</em> They have been featured in literature, art, and various cultures, often representing <span>love,</span> reverence, and spirituality.
+            </p>
+            <p>Join us on a journey to explore the significance of white roses across different cultures and traditions. Learn about their historical importance, modern uses, and the stories that have been woven around them.
+            </p> <hr/>
+            <img class="myImg" src="https://images.unsplash.com/photo-1551771562-5f6b587637cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHdoaXRlJTIwcm9zZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="White Roses" >
+        </div>
+       
+        <a href="https://www.flowerglossary.com/white-roses/" target="_blank">Read More</a> <hr/>
+       
+        <button class="button">Order Now</button>
+    </div>
+
+    <script>
+        function orderFlower(){
+            let name = prompt("What is your name?");
+            let number = prompt("How many bouquets do you wish to take?");
+            let friend = prompt("Towhom should we refer these white rose?");
+
+            if (name !== "" && number !== "" && friend !== "") {
+                alert("Hello "+name+"! we've sent your friend "+friend+" "+number +" bouquets of white roses 🌹🌼✨");
+            }
+            else {
+               
+                alert("Sorry please fill in all the fields to get the roses 😟");
+            }
+        }
+        let buttonClick = document.querySelector("button");
+        buttonClick.addEventListener('click', orderFlower);
+        
+    </script>
+</body>
+</html>
